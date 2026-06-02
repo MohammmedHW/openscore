@@ -1,0 +1,129 @@
+.promo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #efebff;
+  border-radius: 24px;
+
+  padding: 20px 30px;
+  min-height: 160px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+/* LEFT CONTENT */
+.promo-content {
+  flex: 1.4;
+  min-width: 220px;
+}
+
+.promo-title-small {
+  display: block;
+  color: #6548ff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.promo-highlight {
+  margin: 0;
+  font-size: 28px; /* Reduced from 50+ */
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.promo-subtitle {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.promo-btn {
+  border: none;
+  background: #5b32ff;
+  color: white;
+
+  padding: 10px 18px;
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* CENTER IMAGE */
+.promo-image {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.promo-image img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* RIGHT CARD */
+.promo-card {
+  width: 110px;
+  height: 90px;
+
+  background: white;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.promo-card-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: #5b32ff;
+}
+
+.promo-card-label {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .promo-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .promo-highlight {
+    font-size: 24px;
+  }
+
+  .promo-image {
+    width: 120px;
+  }
+
+  .promo-image img {
+    width: 120px;
+  }
+
+  .promo-card {
+    width: 100px;
+    height: 80px;
+  }
+}

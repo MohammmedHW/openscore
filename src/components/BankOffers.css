@@ -1,0 +1,93 @@
+.bank-offers {
+  align-items: stretch;
+}
+
+.bank-card {
+  flex: 1;
+  border-radius: 20px;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.setup-card {
+  background: linear-gradient(135deg, #BE9AFE, #D2B7FC);
+}
+
+.badge-new {
+  background: white;
+  color: #8c52ff;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.btn-setup {
+  background: white;
+  color: #8c52ff;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.bank-img {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.credit-card {
+  background: linear-gradient(135deg, #F0F4FE, #E6EEFD);
+  border: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+[data-theme='dark'] .credit-card {
+  background: linear-gradient(135deg, #1A1F3B, #121528);
+}
+
+.credit-card .btn-primary {
+  padding: 6px 14px;
+  font-size: 11px;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.wallet-img {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.zero-percent-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  color: #3b28f6;
+  border: 2px solid #3b28f6;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 12px;
+  z-index: 10;
+}

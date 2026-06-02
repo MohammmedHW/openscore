@@ -1,0 +1,259 @@
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+/* =========================
+   ELITE CARD
+========================= */
+
+.elite-card {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 180px;
+  padding: 18px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(135deg, #7C45FC 0%, #632BFA 100%);
+
+  box-shadow: 0 12px 30px rgba(123, 63, 242, 0.25);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.elite-content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.value-block {
+  margin-top: 12px;
+}
+
+.value-block h1 {
+  margin: 0;
+
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 800;
+
+  color: #fff;
+}
+
+.value-block span {
+  display: block;
+  margin-top: 4px;
+
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.details-btn {
+  margin-top: 16px;
+
+  height: 36px;
+  padding: 0 8px;
+
+  border: none;
+  border-radius: 50px;
+
+  background: #fff;
+  color: #6f3cff;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.details-btn:hover {
+  transform: translateY(-2px);
+}
+
+.shield-image {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  z-index: 1;
+}
+
+/* =========================
+   VAULT CARD
+========================= */
+
+.vault-card {
+  background: #fff;
+
+  border-radius: 24px;
+
+  padding: 18px;
+
+  min-height: 180px;
+
+  border: 1px solid #f0f0f5;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.vault-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #6f3cff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.vault-badge {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 8px;
+
+  background: #f4efff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6f3cff;
+}
+
+.vault-tabs {
+  display: flex;
+  gap: 12px;
+
+  margin-top: 14px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #ececf4;
+}
+
+.vault-tabs button {
+  background: transparent;
+  border: none;
+
+  padding-bottom: 8px;
+
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+
+  color: #9b9bb0;
+
+  cursor: pointer;
+}
+
+.vault-tabs .active {
+  color: #6f3cff;
+  border-bottom: 2px solid #6f3cff;
+}
+
+.vault-content {
+  flex: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+
+  margin-top: 15px;
+}
+
+.vault-info p {
+  margin: 0;
+
+  font-size: 11px;
+  color: #9b9bb0;
+}
+
+.vault-info h2 {
+  margin-top: 6px;
+
+  font-size: 42px;
+  line-height: 1;
+
+  font-weight: 800;
+  color: #202030;
+}
+
+.vault-img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  margin-right: -5px;
+  margin-bottom: -5px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .elite-card,
+  .vault-card {
+    min-height: 170px;
+  }
+
+  .value-block h1 {
+    font-size: 42px;
+  }
+
+  .vault-info h2 {
+    font-size: 36px;
+  }
+
+  .shield-image {
+    width: 90px;
+  }
+
+  .vault-img {
+    width: 75px;
+  }
+}

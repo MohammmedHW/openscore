@@ -1,0 +1,17 @@
+.ways-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.way-card {
+  padding: 16px;
+  border-radius: 16px;
+  align-items: stretch;
+}
+
+.way-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
