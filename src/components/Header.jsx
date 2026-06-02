@@ -19,7 +19,7 @@ const Header = ({ toggleTheme, theme }) => {
 
       <div className="live-status flex items-center gap-1">
         <span className="live-indicator text-xs">↗</span>
-        <span className="live-count font-semibold text-sm">12,616 LIVE</span>
+        <span className="live-count font-semibold text-xs">12,616 LIVE</span>
       </div>
 
       <div className="header-actions flex gap-1">
