@@ -22,6 +22,11 @@
 
 .setup-card {
   background: linear-gradient(135deg, #BE9AFE, #D2B7FC);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 150px; 
+  padding: 16px;
 }
 
 .badge-new {
@@ -44,6 +49,10 @@
   align-items: center;
   gap: 4px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+  margin-top: auto; /* pushes button to bottom */
+  width: fit-content;
+  z-index: 2;
 }
 
 .bank-img {
@@ -55,7 +64,6 @@
   object-fit: contain;
   z-index: 1;
 }
-
 .credit-card {
   background: linear-gradient(135deg, #F0F4FE, #E6EEFD);
   border: 1px solid rgba(0,0,0,0.05);

@@ -7,6 +7,7 @@ import BankOffers from './components/BankOffers';
 import Marketplace from './components/Marketplace';
 import MoreWaysToEarn from './components/MoreWaysToEarn';
 import BottomNav from './components/BottomNav';
+import SuperSaverZone from './components/SuperSaverZone';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -42,16 +43,7 @@ function App() {
         <Marketplace />
         <MoreWaysToEarn />
 
-        <PromoBanner 
-          title="Super Saver Zone"
-          highlight=""
-          subtitle="Exclusive Offers & Extra Cashback"
-          actionText="Explore Offers"
-          badge="HOT"
-          bgGradient={theme === 'dark' ? 'linear-gradient(90deg, #2E1559 0%, #170E3A 100%)' : 'linear-gradient(90deg, #F6EEFF 0%, #EFE1FF 100%)'}
-          titleColor={theme === 'dark' ? '#C29CFF' : '#722BFF'}
-          isSmall={true}
-        />
+        <SuperSaverZone />
       </main>
       
       <BottomNav />
