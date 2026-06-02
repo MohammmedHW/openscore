@@ -17,15 +17,15 @@ const MoreWaysToEarn = () => {
         <a href="#" className="section-link">View All <ChevronRight size={16} /></a>
       </div>
       
-      <div className="ways-grid">
+      <div className="ways-scroll flex gap-3">
         {ways.map(way => (
-          <div key={way.id} className="way-card card flex justify-between items-center">
+          <div key={way.id} className="way-card card flex flex-col justify-between items-start gap-2">
             <div>
               <h4 className="text-xs font-bold">{way.title}</h4>
-              <p className="text-[10px] text-secondary mt-1">{way.sub}</p>
+              <p className="text-xs text-secondary mt-1">{way.sub}</p>
               <h3 className="text-sm font-bold text-accent">{way.value}</h3>
             </div>
-            <div className="way-icon">{way.icon}</div>
+            <div className="way-icon self-end">{way.icon}</div>
           </div>
         ))}
       </div>

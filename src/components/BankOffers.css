@@ -1,13 +1,23 @@
 .bank-offers {
   align-items: stretch;
+  overflow-x: auto;
+  padding: 4px 20px 16px 20px;
+  margin: 0 -20px;
+  scrollbar-width: none;
+}
+
+.bank-offers::-webkit-scrollbar {
+  display: none;
 }
 
 .bank-card {
   flex: 1;
+  min-width: 260px;
   border-radius: 20px;
   padding: 16px;
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .setup-card {

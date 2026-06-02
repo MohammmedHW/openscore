@@ -1,17 +1,26 @@
-.ways-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+.ways-scroll {
+  overflow-x: auto;
+  padding: 4px 20px 16px 20px;
+  margin: 0 -20px;
+  scrollbar-width: none;
+}
+
+.ways-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .way-card {
-  padding: 16px;
+  min-width: 130px;
+  padding: 12px;
   border-radius: 16px;
-  align-items: stretch;
+  flex-shrink: 0;
 }
 
 .way-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--bg-tertiary);
+  padding: 8px;
+  border-radius: 12px;
 }
