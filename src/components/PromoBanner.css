@@ -105,25 +105,64 @@
 /* MOBILE */
 @media (max-width: 768px) {
   .promo-banner {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
+    flex-direction: row;
+    text-align: left;
+    padding: 12px 16px;
+    gap: 8px;
+    min-height: 100px;
+  }
+
+  .promo-content {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .promo-title-small {
+    font-size: 9px;
+    margin-bottom: 2px;
   }
 
   .promo-highlight {
-    font-size: 24px;
+    font-size: 18px;
+  }
+
+  .promo-subtitle {
+    font-size: 9px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .promo-btn {
+    font-size: 9px;
+    padding: 6px 10px;
+  }
+  
+  .promo-btn svg {
+    width: 12px;
+    height: 12px;
   }
 
   .promo-image {
-    width: 120px;
+    width: 70px;
+    margin: 0;
   }
 
   .promo-image img {
-    width: 120px;
+    width: 80px;
   }
 
   .promo-card {
-    width: 100px;
-    height: 80px;
+    width: 65px;
+    height: 55px;
+    border-radius: 12px;
+  }
+
+  .promo-card-price {
+    font-size: 14px;
+  }
+
+  .promo-card-label {
+    font-size: 8px;
+    margin-top: 2px;
   }
 }
